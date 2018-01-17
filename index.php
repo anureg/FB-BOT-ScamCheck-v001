@@ -1,4 +1,4 @@
-$access_token = "EAAE70dygU3kBAGcheUefVYtJtREwm6QMOkVcfzLi9aq9ZARgpqRNbYI1OcjrjafZBsLx60uxpBK0Ae7U8aSHYrPi0GxG6KpezsIWTxkgLPAYtarTNPJCEcZAAcKeg08dMsbSi5IBJYr2MZCXiBQ55070mDJlkANKCMmoheXPGwZDZD";
+$access_token = "EAAE70dygU3kBAOko1eKORB6OaYsWkycOBkZBang4rKTOFwJAz75aPotOOsrvaIYmX2keZCCgZCKreuz2NDruwtZBaBM9MNC3Wlee7phz8ZBs3GZCZB6HyLfWyZAai6WfD0pcueDJ1jxhwS1j6E3S485ijZB4t41rh2ZArShGpPUPquOwZDZD";
 $verify_token = "yellow_duck";
 $hub_verify_token = null;
 if(isset($_REQUEST['hub_challenge'])) {
