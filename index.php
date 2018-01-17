@@ -1,4 +1,5 @@
-$access_token = "EAAE70dygU3kBAOko1eKORB6OaYsWkycOBkZBang4rKTOFwJAz75aPotOOsrvaIYmX2keZCCgZCKreuz2NDruwtZBaBM9MNC3Wlee7phz8ZBs3GZCZB6HyLfWyZAai6WfD0pcueDJ1jxhwS1j6E3S485ijZB4t41rh2ZArShGpPUPquOwZDZD";
+<?php
+$access_token = "<ACCESS TOKEN>";
 $verify_token = "yellow_duck";
 $hub_verify_token = null;
 if(isset($_REQUEST['hub_challenge'])) {
@@ -15,9 +16,9 @@ $message_to_reply = '';
 /**
  * Some Basic rules to validate incoming messages
  */
- 
-$api_key="Isp3FdQorX-zylsQHE3_Y91sPC5vNl5H";
-$url = 'https://api.mlab.com/api/1/databases/scamcheck/collections/bot?apiKey='.$api_key.'';
+
+$api_key="<mLAP API KEY>";
+$url = 'https://api.mlab.com/api/1/databases/duckduck/collections/linebot?apiKey='.$api_key.'';
 $json = file_get_contents('https://api.mlab.com/api/1/databases/duckduck/collections/linebot?apiKey='.$api_key.'&q={"question":"'.$message.'"}');
 $data = json_decode($json);
 $isData=sizeof($data);
