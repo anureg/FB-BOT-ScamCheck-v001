@@ -18,8 +18,8 @@ $message_to_reply = '';
  */
 
 $api_key="Isp3FdQorX-zylsQHE3_Y91sPC5vNl5H";
-$url = 'https://api.mlab.com/api/1/databases/scamcheck/collections/chatbot?apiKey='.$api_key.'';
-$json = file_get_contents('https://api.mlab.com/api/1/databases/scamcheck/collections/chatbot?apiKey='.$api_key.'&q={"question":"'.$message.'"}');
+$url = 'https://api.mlab.com/api/1/databases/scamcheck/collections/bot?apiKey='.$api_key.'';
+$json = file_get_contents('https://api.mlab.com/api/1/databases/scamcheck/collections/bot?apiKey='.$api_key.'&q={"question":"'.$message.'"}');
 $data = json_decode($json);
 $isData=sizeof($data);
 if (strpos($message, 'สอนเป็ด') !== false) {
