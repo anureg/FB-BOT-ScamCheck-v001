@@ -17,9 +17,9 @@ $message_to_reply = '';
  * Some Basic rules to validate incoming messages
  */
 
-$api_key="<mLAP API KEY>";
-$url = 'https://api.mlab.com/api/1/databases/duckduck/collections/linebot?apiKey='.$api_key.'';
-$json = file_get_contents('https://api.mlab.com/api/1/databases/duckduck/collections/linebot?apiKey='.$api_key.'&q={"question":"'.$message.'"}');
+$api_key="Isp3FdQorX-zylsQHE3_Y91sPC5vNl5H";
+$url = 'https://api.mlab.com/api/1/databases/scamcheck/collections/chatbot?apiKey='.$api_key.'';
+$json = file_get_contents('https://api.mlab.com/api/1/databases/scamcheck/collections/chatbot?apiKey='.$api_key.'&q={"question":"'.$message.'"}');
 $data = json_decode($json);
 $isData=sizeof($data);
 if (strpos($message, 'สอนเป็ด') !== false) {
